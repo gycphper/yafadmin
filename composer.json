@@ -1,0 +1,24 @@
+{
+    "require": {
+        "php": "^7.2",
+        "predis/predis": "^1.1",
+        "illuminate/database": "^7.3",
+        "illuminate/events": "^7.3",
+        "doctrine/dbal": "^2.10",
+        "symfony/translation": "^5.0",
+        "symfony/process": "^5.0",
+        "symfony/console": "^5.0",
+        "illuminate/pagination": "^7.3",
+        "symfony/finder": "^5.0",
+        "nesbot/carbon": "^2.32",
+        "symfony/translation-contracts": "^2.0",
+        "twig/twig": "~1.0",
+        "symfony/polyfill-mbstring": "^1.14",
+        "gregwar/captcha": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Models\\": "application/models"
+        }
+    }
+}

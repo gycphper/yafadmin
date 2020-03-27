@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>后台登录</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/static/js/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/css/admin.css" media="all">
+    <link rel="stylesheet" href="/static/css/login.css" media="all">
+</head>
+<body>
+
+<div class="layadmin-user-login layadmin-user-display-show" >
+
+    <div class="layadmin-user-login-main">
+        <div class="layadmin-user-login-box layadmin-user-login-header">
+            <h2>后台管理系统</h2>
+        </div>
+        {% block content %}{% endblock content %}
+    </div>
+</div>
+
+<script src="/static/js/layui/layui.js"></script>
+<script>
+    layui.config({
+        base: '/static/js/' //静态资源所在路径
+    }).use(['layer'],function () {
+        var layer = layui.layer;
+    })
+</script>
+</body>
+</html>
